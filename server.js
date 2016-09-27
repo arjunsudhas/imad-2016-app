@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/myweb.html', function (req, res) {
+app.get('/ui/myweb.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'myweb.html'));
 });
 app.get('/ui/style.css', function (req, res) {
